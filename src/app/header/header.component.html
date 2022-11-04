@@ -1,3 +1,17 @@
-<nav>
-
-</nav>
+<div class="header-container" fxLayout fxLayoutAlign="space-between center">
+  <div class="name">
+    Agnieszka Orzeł<span class="spec"> / </span
+    ><span class="spec">Psychoterapeuta</span>
+  </div>
+  <nav fxShow.lt-md="false">
+    <ul fxLayout fxLayoutGap="30px" class="nav-list">
+      <li [routerLink]="['/about']" routerLinkActive="active">About Me</li>
+      <li [routerLink]="['/pomoc']">W czym mogę pomóc</li>
+      <li [routerLink]="['/jakpracuje']">Jak pracuję</li>
+      <li [routerLink]="['/spotkanie']">Pierwsze spotkanie</li>
+    </ul>
+  </nav>
+  <div>
+    <fa-icon [icon]="faBars"></fa-icon>
+  </div>
+</div>

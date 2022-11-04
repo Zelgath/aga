@@ -1,0 +1,42 @@
+.about-container {
+    height: 100%;
+}
+
+.image-container {
+    background: url('../../assets/stock-photo-blurry-gentle-background-with-many-white-baby-s-breath-flowers-gypsophila-paniculata-in-the-1235098105.jpg');
+}
+
+.profile {
+    position: relative;
+    left: 80%;
+}
+
+.content {
+    padding: 200px;
+    overflow-y: scroll;
+    &--lt-xl {
+        padding: 0 40px 0 245px;
+    }
+
+    &--lt-md {
+        padding: 20px;
+    }
+}
+
+h1 {
+    color: white;
+}
+
+.link {
+    background-color: rgb(195, 223, 243);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+
+    &:hover {
+        transition: linear 300ms;
+        background-color: rgb(0, 0, 238);
+        color: white;
+    }
+}

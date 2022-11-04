@@ -1,0 +1,40 @@
+.header-container {
+  background-color: rgb(47, 56, 46);
+  padding: 0 30px;
+  height: 80px;
+  color: white;
+}
+
+.nav-list {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  li {
+    cursor: pointer;
+    &:hover {
+      transition: linear 200ms;
+      color: #4ecdc4;
+    }
+  }
+}
+
+.active {
+  color: #4ecdc4;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.spec {
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: rgb(195, 223, 243);
+  font-weight: 300;
+}
