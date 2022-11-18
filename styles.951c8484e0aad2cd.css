@@ -1,0 +1,1 @@
+:root{--doc-height: 100%}html,body{background-color:#c7c7bb;margin:0;font-family:Times New Roman,Times,serif;height:var(--doc-height)}p{font-size:20px;text-align:justify}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:rgb(47,56,46);border-radius:20px}::-webkit-scrollbar-thumb:hover{background:#555}
