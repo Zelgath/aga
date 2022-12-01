@@ -1,5 +1,4 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { faX } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-modal',
@@ -9,7 +8,6 @@ import { faX } from '@fortawesome/free-solid-svg-icons';
 export class ModalComponent {
   @Output()
   closeModal = new EventEmitter<void>();
-  faX = faX;
 
   close(): void {
     this.closeModal.emit();

@@ -1,7 +1,7 @@
 .overlay {
   width: 70vw;
   height: 100vh;
-  padding: 90px 50px;
+  padding: 20px;
   z-index: 2;
   position: absolute;
   background-color: rgb(47, 56, 46);
@@ -10,6 +10,10 @@
   color: white;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.x {
+  cursor: pointer;
 }
 
 .link {
@@ -33,6 +37,7 @@ fa-icon {
 .modal-content {
   font-size: 18px;
   margin-top: 40px;
+  padding-right: 30px;
 }
 
 a {

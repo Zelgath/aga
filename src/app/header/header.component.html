@@ -39,13 +39,18 @@
       </li>
     </ul>
   </nav>
-  <div fxShow.gt-md="false" fxShow.lt-sm="false">
-    <fa-icon (click)="onBarsClicked()" [icon]="faBars" size="xl"></fa-icon>
+  <div fxShow.gt-md="false" fxShow.lt-sm="false" (click)="onBarsClicked()">
+    <span class="material-symbols-outlined"> menu </span>
   </div>
 </div>
 
 <!-- mobile -->
-<div fxLayout="column" fxShow.gt-sm="false" fxShow.sm="false" class="header-container--lt-sm">
+<div
+  fxLayout="column"
+  fxShow.gt-sm="false"
+  fxShow.sm="false"
+  class="header-container--lt-sm"
+>
   <div
     fxFlex="60%"
     fxLayout
