@@ -1,6 +1,26 @@
 .footer-container {
-    height: 50px;
-    background-color: #2D4739;
-    padding: 0 30px;
-    color: white;
+  height: 100px;
+  background-color: rgb(47, 56, 46);
+  padding: 0 30px;
+  color: white;
+
+  &--lt-sm {
+    background-image: url("../../assets/shutterstock_1235098105.jpg");
+    background-size: 100%;
+    padding: 0 25px;
+    height: 60px;
+    font-size: 14px;
+    background-blend-mode: soft-light;
+  }
+}
+
+.smaller {
+    font-size: 10px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

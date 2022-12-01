@@ -1,0 +1,26 @@
+<div
+  class="about-container"
+  fxLayout.lt-md="column"
+  fxLayout
+  fxLayoutAlign.lt-sm="start center"
+>
+  <div
+    class="image-container"
+    fxFlex="35%"
+    fxLayout="column"
+    fxLayoutAlign="center"
+    fxShow.sm="false"
+    fxShow.lt-sm="false"
+  >
+    <img />
+  </div>
+  <div
+    class="content"
+    fxFlex="65%"
+    fxFlex.lt-sm="100%"
+    fxLayout
+    fxLayoutAlign="start stretch"
+  >
+    <ng-content></ng-content>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.overlay {
+  width: 70vw;
+  height: 100vh;
+  padding: 90px 50px;
+  z-index: 2;
+  position: absolute;
+  background-color: rgb(47, 56, 46);
+  top: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.link {
+  cursor: pointer;
+  &:hover {
+    color: rgb(169, 219, 253);
+  }
+}
+
+fa-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(169, 219, 253);
+  }
+}
+
+.modal-content {
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  all: unset;
+}
+
+.active {
+  color: rgb(169, 219, 253);
+}

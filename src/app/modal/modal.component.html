@@ -1,0 +1,34 @@
+<div class="overlay" fxLayout="column" fxLayoutAlign="start center">
+  <fa-icon (click)="close()" [icon]="faX"></fa-icon>
+  <div
+    class="modal-content"
+    fxLayout="column"
+    fxLayoutGap="50px"
+    fxLayoutAlign="start start"
+  >
+    <div (click)="close()" class="link">
+      <a [routerLink]="['/start']" routerLinkActive="active">Strona główna</a>
+    </div>
+    <div (click)="close()" class="link">
+      <a [routerLink]="['/omnie']" routerLinkActive="active">O mnie</a>
+    </div>
+    <div (click)="close()" class="link">
+      <a [routerLink]="['/terapia']" routerLinkActive="active">Metoda</a>
+    </div>
+    <div (click)="close()" class="link">
+      <a [routerLink]="['/swiatopoglad']" routerLinkActive="active"
+        >Światopogląd</a
+      >
+    </div>
+    <div (click)="close()" class="link">
+      <a [routerLink]="['/zaburzenia']" routerLinkActive="active"
+        >W czym mogę pomóc</a
+      >
+    </div>
+    <div (click)="close()" class="link">
+      <a [routerLink]="['/kontakt']" routerLinkActive="active"
+        >Kontakt/cennik</a
+      >
+    </div>
+  </div>
+</div>

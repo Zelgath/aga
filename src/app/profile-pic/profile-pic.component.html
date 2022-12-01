@@ -1,19 +1,17 @@
 <div
-  class="profile-container"
+  [ngClass]="
+    mode === 'BIG' ? 'profile-container--big' : 'profile-container--small'
+  "
   fxLayout="column"
+  fxLayoutAlign="start center"
 >
-  <img src="../../assets/aga foto1.jpg" />
-  <div
-    class="text-content"
-    fxLayout="column"
-    fxLayoutAlign="center center"
-    fxFlex="1 1 100%"
-  >
-    <div class="name" fxLayout fxLayoutAlign="center center" fxFlex="1 1 100%">
+  <img [ngClass]="mode === 'BIG' ? 'big' : 'small'" />
+  <div class="text-content" fxLayout="column" fxLayoutAlign="start center">
+    <div [ngClass]="mode === 'BIG' ? 'name--big' : 'name--small'">
       Agnieszka Orzeł
     </div>
-    <div class="line"></div>
-    <div class="spec" fxLayout fxLayoutAlign="center center" fxFlex="1 1 100%">
+    <div [ngClass]="mode === 'BIG' ? 'line--big' : 'line--small'"></div>
+    <div [ngClass]="mode === 'BIG' ? 'spec--big' : 'spec--small'">
       Psychoterapeuta
     </div>
   </div>

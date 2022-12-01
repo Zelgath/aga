@@ -1,0 +1,78 @@
+<app-page-wrapper fxShow.lt-sm="false">
+  <div
+    class="wrapper"
+    ngClass.lt-sm="wrapper--lt-sm"
+    fxLayout="column"
+    fxLayoutAlign="center start"
+  >
+    <h1>Miej się dobrze...</h1>
+    <p>
+      Twoje przeżycia psychiczne i emocjonalne mają własną dynamikę. W nurcie
+      psychodynamicznym właśnie ona wyznacza ścieżkę dla pracy terapeutycznej.
+    </p>
+    <p>
+      Niezależnie od tego, jak trudne czy jak błahe mogłyby się wydawać ludzkie
+      doświadczenia emocjonalne, jako terapeuta nieustannie wychodzę im
+      naprzeciw. W warunkach szacunku, akceptacji i szczerości poprowadzę Cię w
+      zmianie tych obszarów życia psychicznego oraz funkcjonowania społecznego,
+      które sprawiają Ci trudności lub cierpienie.
+    </p>
+    <p>To nasz wspólny wysiłek, abyś miał, abyś miała się dobrze…</p>
+    <div class="desktop-links-container" fxLayout fxLayoutGap="20px">
+      <div class="desktop-link" (click)="navigateWithParam('jakpracuje')">
+        Jak pracuję
+      </div>
+      <div class="desktop-link" (click)="navigateWithParam('psychodynamiczna')">
+        Dlaczego psychodynamiczna
+      </div>
+      <div class="desktop-link" (click)="navigateWithParam('spotkanie')">
+        Pierwsze spotkanie
+      </div>
+    </div>
+  </div>
+</app-page-wrapper>
+<app-profile-pic class="big-picture" fxShow.lt-md="false"></app-profile-pic>
+
+<div class="mobile-wrapper" fxShow.gt-sm="false" fxShow.sm="false">
+  <div class="photo-section" fxLayout>
+    <app-profile-pic
+      class="small-picture"
+      mode="small"
+      fxFlex="50%"
+    ></app-profile-pic>
+    <div
+      class="links"
+      fxFlex="50%"
+      fxLayout="column"
+      fxLayoutAlign="space-between start"
+    >
+      <h1 class="small-title">Miej się dobrze...</h1>
+      <div class="links-container" fxLayout="column" fxLayoutGap="15px">
+        <div class="link" (click)="navigateWithParam('jakpracuje')">
+          JAK PRACUJĘ
+        </div>
+        <div class="link" (click)="navigateWithParam('psychodynamiczna')">
+          O METODZIE
+        </div>
+        <div class="link" (click)="navigateWithParam('spotkanie')">
+          PIERWSZE SPOTKANIE
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-text">
+    <p>
+      Twoje przeżycia psychiczne i emocjonalne mają własną dynamikę. W nurcie
+      psychodynamicznym właśnie ona wyznacza ścieżkę dla pracy terapeutycznej.
+      Niezależnie od tego, jak trudne czy jak błahe mogłyby się wydawać
+      doświadczenia emocjonalne Pacjenta, terapeuta nieustannie wychodzi im
+      naprzeciw.
+    </p>
+    <p>
+      W warunkach szacunku, akceptacji i szczerości prowadzę Pacjenta w zmianie
+      tych obszarów jego życia psychicznego oraz funkcjonowania społecznego,
+      które sprawiają mu trudności lub cierpienie.
+    </p>
+    <p>To nasz wspólny wysiłek, abyś miał, abyś miała się dobrze…</p>
+  </div>
+</div>

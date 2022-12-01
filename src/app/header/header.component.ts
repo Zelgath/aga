@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -7,5 +7,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  @Output() openModal = new EventEmitter<void>();
   faBars = faBars;
+
+  onBarsClicked(): void {
+    this.openModal.emit();
+  }
 }

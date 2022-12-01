@@ -1,17 +1,67 @@
-<div class="header-container" fxLayout fxLayoutAlign="space-between center">
-  <div class="name">
-    Agnieszka Orzeł<span class="spec"> / </span
-    ><span class="spec">Psychoterapeuta</span>
+<div
+  class="header-container"
+  ngClass.lt-sm="header-container--lt-sm"
+  fxLayout
+  fxLayoutAlign="space-between center"
+  fxShow.lt-sm="false"
+>
+  <!-- desktop -->
+  <div
+    fxLayout
+    fxLayoutGap="8px"
+    fxLayoutAlign="center center"
+    fxLayoutAlign.lt-sm="start start"
+    fxLayout.lt-sm="column"
+    fxLayoutGap.lt-sm="5px"
+  >
+    <div class="square"></div>
+    <div class="name" [routerLink]="['/']">
+      A<span>gnieszka</span> O<span>rzeł</span>
+    </div>
+    <div class="spec">/</div>
+    <div class="spec" ngClass.lt-sm="spec--lt-sm">Psychoterapeuta</div>
   </div>
-  <nav fxShow.lt-md="false">
+  <!-- desktop -->
+
+  <nav fxShow.lt-md="false" fxShow.md="false">
     <ul fxLayout fxLayoutGap="30px" class="nav-list">
-      <li [routerLink]="['/about']" routerLinkActive="active">About Me</li>
-      <li [routerLink]="['/pomoc']">W czym mogę pomóc</li>
-      <li [routerLink]="['/jakpracuje']">Jak pracuję</li>
-      <li [routerLink]="['/spotkanie']">Pierwsze spotkanie</li>
+      <li [routerLink]="['/start']" routerLinkActive="active">Strona główna</li>
+      <li [routerLink]="['/omnie']" routerLinkActive="active">O mnie</li>
+      <li [routerLink]="['/terapia']" routerLinkActive="active">Metoda</li>
+      <li [routerLink]="['/swiatopoglad']" routerLinkActive="active">
+        Światopogląd
+      </li>
+      <li [routerLink]="['/zaburzenia']" routerLinkActive="active">
+        W czym mogę pomóc
+      </li>
+      <li [routerLink]="['/kontakt']" routerLinkActive="active">
+        Kontakt/cennik
+      </li>
     </ul>
   </nav>
-  <div>
-    <fa-icon [icon]="faBars"></fa-icon>
+  <div fxShow.gt-md="false" fxShow.lt-sm="false">
+    <fa-icon (click)="onBarsClicked()" [icon]="faBars" size="xl"></fa-icon>
   </div>
 </div>
+
+<!-- mobile -->
+<div fxLayout="column" fxShow.gt-sm="false" fxShow.sm="false" class="header-container--lt-sm">
+  <div
+    fxFlex="60%"
+    fxLayout
+    fxLayoutAlign="space-between center"
+    class="higher-half"
+  >
+    <div fxLayout fxLayoutAlign="center center">
+      <div class="name" ngClass.lt-sm="name--lt-sm" [routerLink]="['/']">
+        A<span>gnieszka</span> O<span>rzeł</span>
+      </div>
+      <div class="spec" ngClass.lt-sm="spec--lt-sm">Psychoterapeuta</div>
+    </div>
+    <div fxLayout fxLayoutAlign="center center" (click)="onBarsClicked()">
+      <span class="material-symbols-outlined"> menu </span>
+    </div>
+  </div>
+  <div class="mobile-half" fxFlex="40%"></div>
+</div>
+<!-- mobile -->

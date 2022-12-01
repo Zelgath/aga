@@ -1,5 +1,60 @@
+@import "../src/assets/constants.scss";
+
+:root {
+  --doc-height: 100%;
+}
+
+html,
 body {
-    background-color: rgb(199, 199, 187);
-    margin: 0;
-    font-family: Arial,Helvetica,sans-serif;
+  background-color: $background;
+  margin: 0;
+  font-family: $avenir;
+  height: var(--doc-height);
+  overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $headerColor;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+p {
+  font-size: 17px;
+  margin-block-start: 0.4em !important;
+  margin-block-end: 0.4em !important;
+  line-height: 1.2em;
+}
+
+.box {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 700px;
+  padding: 20px;
+  text-align: center;
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    margin-block-start: 0px !important;
+  }
+
+  &--lt-sm {
+    width: 100%;
+  
+  }
 }

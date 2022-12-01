@@ -1,3 +1,11 @@
 .app-container {
-    height: 100vh;
+  height: 100%;
+}
+
+app-footer, app-header {
+  z-index: 2;
+}
+
+main {
+  overflow-y: auto;
 }

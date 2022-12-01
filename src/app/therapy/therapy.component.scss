@@ -1,0 +1,29 @@
+.wrapper {
+    height: 100%;
+    margin-top: 10px;
+    padding: 50px;
+  
+    p {
+      text-align: justify;
+    }
+  
+    &--lt-sm {
+      h1 {
+        font-size: 28px;
+      }
+  
+  
+      h2 {
+        font-size: 18px;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  
+.height {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+

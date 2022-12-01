@@ -1,42 +1,50 @@
-.about-container {
-    height: 100%;
+app-profile-pic {
+  position: absolute;
+  right: calc(65% - 163px);
+  bottom: calc(50% - 278px);
+  width: 300px;
+  height: 483px;
 }
 
-.image-container {
-    background: url('../../assets/stock-photo-blurry-gentle-background-with-many-white-baby-s-breath-flowers-gypsophila-paniculata-in-the-1235098105.jpg');
-}
-
-.profile {
-    position: relative;
-    left: 80%;
-}
-
-.content {
-    padding: 200px;
-    overflow-y: scroll;
-    &--lt-xl {
-        padding: 0 40px 0 245px;
-    }
-
-    &--lt-md {
-        padding: 20px;
-    }
+.wrapper {
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  overflow: auto;
+  width: 537px;
+  margin-left: 165px;
 }
 
 h1 {
-    color: white;
+  font-size: 40px;
+  color: white;
+  font-style: italic;
 }
 
-.link {
-    background-color: rgb(195, 223, 243);
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid black;
-    cursor: pointer;
+.mobile-wrapper {
+  height: 100%;
+  margin-top: 10px;
+  padding: 50px;
 
-    &:hover {
-        transition: linear 300ms;
-        background-color: rgb(0, 0, 238);
-        color: white;
+  p {
+    text-align: justify;
+  }
+
+  &--lt-sm {
+    h1 {
+      font-size: 28px;
     }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.height {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  margin-top: 10px;
 }

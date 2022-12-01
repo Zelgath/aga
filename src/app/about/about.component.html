@@ -1,44 +1,57 @@
-<div class="about-container" fxLayout.lt-md="column" fxLayout>
+<app-page-wrapper fxShow.lt-sm="false">
   <div
-    class="image-container"
-    fxFlex="40%"
+    class="wrapper"
     fxLayout="column"
-    fxLayoutAlign="center"
-  >
-    <app-profile-pic class="profile" fxShow.lt-md="false"></app-profile-pic>
-  </div>
-  <div
-    class="content"
-    fxLayout="column"
-    fxLayoutGap="60px"
-    fxFlex="60%"
     fxLayoutAlign="center start"
-    fxLayoutAlign.lt-md="start center"
-    ngClass.lt-xl="content--lt-xl"
-    ngClass.lt-md="content--lt-md"
+    ngClass.lt-sm="wrapper--lt-sm"
   >
-    <h1>Miej się dobrze...</h1>
-    <div class="links-photo-wrapper" fxLayout>
-      <app-profile-pic fxShow.gt-md="false"></app-profile-pic>
-      <div
-        class="links-container"
-        fxLayout
-        fxLayout.lt-lg="column"
-        fxLayoutGap="20px"
-      >
-        <div class="link"><a>W czym mogę pomóc</a></div>
-        <div class="link"><a>Jak pracuję</a></div>
-        <div class="link"><a>Pierwsze spotkanie</a></div>
-      </div>
-    </div>
-    <div>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum."
+    <div class="text-content">
+      <h1>O mnie...</h1>
+      <p>
+        Ukończyłam studia magisterskie na uniwersytecie Gdańskim, od wielu lat
+        pracuję zawodowo z człowiekiem: z dziećmi, z młodzieżą, z dorosłymi.
+        Obecnie zdobywam specjalizację w nurcie psychodynamicznym w Krakowskim
+        Centrum Psychodynamicznym. Szkoła rekomendowana jest przez Polskie
+        Towarzystwo Psychologiczne oraz Polskie Towarzystwo Psychoterapii
+        Psychodynamicznej.
+      </p>
+      <p>
+        Pracuję z głębokim poszanowaniem etyki zawodowej psychoterapeuty,
+        obowiązuje mnie tajemnica i poufność oraz dbanie przede wszystkim o
+        dobro Pacjenta. Swoją pracę poddaję stałej ocenie specjalisty
+        superwizora, w celu utrzymania jakości i standardów terapii. Jestem
+        członkiem Polskiego Towarzystwa Psychoterapii Psychodynamicznej.
+      </p>
     </div>
   </div>
+</app-page-wrapper>
+<app-profile-pic fxShow.lt-sm="false" fxShow.sm="false"></app-profile-pic>
+<div
+  class="mobile-wrapper"
+  ngClass.lt-sm="wrapper--lt-sm"
+  fxLayout="column"
+  fxLayoutAlign="start center"
+  fxLayoutGap="40px"
+  fxShow.gt-sm="false"
+>
+  <div class="box" ngClass.lt-sm="box--lt-sm">
+    <h2>O mnie...</h2>
+
+    <p>
+      Ukończyłam studia magisterskie na uniwersytecie Gdańskim, od wielu lat
+      pracuję zawodowo z człowiekiem: z dziećmi, z młodzieżą, z dorosłymi.
+      Obecnie zdobywam specjalizację w nurcie psychodynamicznym w Krakowskim
+      Centrum Psycho- dynamicznym. Szkoła rekomendo- wana jest przez Polskie
+      Towarzystwo Psychologiczne oraz Polskie Towarzystwo Psychoterapii Psycho-
+      dynamicznej.
+    </p>
+    <p>
+      Pracuję z głębokim poszanowaniem etyki zawodowej psychoterapeuty,
+      obowiązuje mnie tajemnica i poufność oraz dbanie przede wszystkim o dobro
+      Pacjenta. Swoją pracę poddaję stałej ocenie specjalisty superwizora, w
+      celu utrzymania jakości i standardów terapii. Jestem członkiem Polskiego
+      Towarzystwa Psychoterapii Psycho- dynamicznej.
+    </p>
+  </div>
+  <div class="height"><p></p></div>
 </div>

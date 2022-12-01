@@ -1,4 +1,28 @@
-<div class="footer-container"fxLayout fxLayoutAlign="space-between center">
-    <div>2022 Agnieszka Orzeł</div>
-    <div>Call</div>
+<div
+  class="footer-container"
+  ngClass.lt-sm="footer-container--lt-sm"
+  fxLayout
+  fxLayoutAlign="space-between center"
+  fxLayoutGap="20px"
+>
+  <div
+    ngClass.lt-sm="smaller"
+    fxLayout
+    fxLayout.lt-sm="column"
+    fxLayoutGap="20px"
+    fxLayoutGap.lt-sm="5px"
+  >
+    <div>Wszelkie prawa zastrzeżone</div>
+  </div>
+  <a href="tel:600322939">
+    <div fxLayout fxLayoutAlign="center center" fxLayoutGap="10px">
+      <div fxLayout fxLayoutAlign="center center" class="phone-box">
+        <span class="material-symbols-outlined"> call </span>
+      </div>
+      <div>
+        <span fxShow.gt-sm="false">ZADZWOŃ </span
+        ><span fxShow.lt-sm="false">+48 600 322 939</span>
+      </div>
+    </div>
+  </a>
 </div>
